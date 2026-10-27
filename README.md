@@ -32,3 +32,7 @@ No accounts, analytics, external fonts, paid services, or backend. Writing draft
 Edit the three website files and refresh. No dependency installation or build command is required. The site uses relative asset links for GitHub Pages project paths. Future Codex tasks should use this existing checkout; no separate worktree is necessary.
 
 Browser validation covers every question, scoring, retrying, topic switching, writing persistence and deletion, unavailable storage, and desktop/tablet/mobile widths. Legal notes are general learning material, not transaction-specific advice. These are illustrative scenarios, not EAGTOP policies.
+
+## Company website demonstration
+
+A separate fictional company demo is in `company/`. It does not replace the English practice website. See [the complete introduction](company/README.md) for features, security measures, privacy behavior, and launch requirements. The company is fictional and the enquiry form does not send messages.
