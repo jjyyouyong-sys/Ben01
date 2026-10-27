@@ -1,23 +1,34 @@
 # Business English Practice
 
-A small, offline-friendly practice app for international sales English. Includes three scenarios, immediate explanations, contract-awareness notes, scoring, and a writing exercise. No account, API key, or package installation is required.
+A responsive, dependency-free website for practicing business English. Nine interactive situations cover sales conversations, professional emails, and negotiation and contracts. Includes instant feedback, topic scores, a phrasebook, and a writing exercise with a model reply.
 
-## Run on your computer
+## Publish with GitHub Pages
 
-Download this project from GitHub (Code → Download ZIP) after the files have been pushed, then extract it. Open `index.html` in your browser. Keep `app.js` and `styles.css` alongside it.
+The website is ready to serve directly from the repository root; there is no build step.
 
-Alternatively, with Python 3 installed, run this command from the project folder:
+1. In GitHub, open this repository’s **Settings → Pages**.
+2. Under **Build and deployment**, select **Deploy from a branch**.
+3. Select **main** and **/ (root)**, then **Save**.
+4. Wait for GitHub to finish deploying. Use the public URL shown on the Pages settings screen.
+
+GitHub Pages availability depends on repository visibility and your GitHub plan. Do not change repository visibility without reviewing what will become public. Publishing has not been verified from this environment; the GitHub API is blocked by its network policy.
+
+## Run locally
+
+Keep `index.html`, `app.js`, and `styles.css` together. Open `index.html` in a browser, or run this in the project folder:
 
 ```sh
 python3 -m http.server 8000
 ```
 
-Then open http://localhost:8000 on that same computer. A server running inside a Codex cloud workspace is not automatically accessible from your computer.
+Open http://localhost:8000 on that same computer. A server running in a Codex cloud workspace is not automatically reachable on your computer.
 
-## Privacy and learning scope
+## Privacy
 
-The writing draft is saved in browser local storage when available. Clear draft deletes it. Nothing is sent to a backend. Local file storage behavior varies by browser. The scenarios are illustrative and do not describe EAGTOP policies. Legal notes are general education, not advice for a specific transaction.
+No accounts, analytics, external fonts, paid services, or backend. Writing drafts stay in browser local storage when available. Clear draft deletes the stored draft. Storage restrictions are handled gracefully. Scores reset when switching topics or reloading. No automated writing grading is provided.
 
-## Develop
+## Development
 
-Edit `index.html`, `styles.css`, and `app.js`, then refresh the browser. No build step or dependencies. Practice again restarts the quiz while preserving the writing draft. A public deployment has not been configured.
+Edit the three website files and refresh. No dependency installation or build command is required. The site uses relative asset links for GitHub Pages project paths. Future Codex tasks should use this existing checkout; no separate worktree is necessary.
+
+Browser validation covers every question, scoring, retrying, topic switching, writing persistence and deletion, unavailable storage, and desktop/tablet/mobile widths. Legal notes are general learning material, not transaction-specific advice. These are illustrative scenarios, not EAGTOP policies.

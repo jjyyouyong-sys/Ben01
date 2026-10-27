@@ -1,6 +1,6 @@
 'use strict';
 const topics = [
-  { id: 'sales', name: 'Sales conversations', icon: '↗', description: 'Build trust, clarify needs, and keep the conversation moving.', lessons: [
+  { id: 'sales', name: 'Sales conversations', icon: '→', description: 'Build trust, clarify needs, and keep the conversation moving.', lessons: [
     {title:'Promise carefully',scene:'A buyer asks: “Can you guarantee delivery within 10 days?” Your production team has not confirmed the schedule. What do you say?',choices:['Yes, absolutely. No problem.','I will check our production schedule and confirm whether we can meet your requested date.','Maybe. You must wait.'],correct:1,why:'Offer a clear next step without making a promise you have not verified.',phrase:'“I will check … and confirm whether we can …”',note:'Contract awareness: clarify whether a delivery date is an estimate or an agreed obligation.'},
     {title:'Understand the customer',scene:'A new customer says your product looks interesting. What is the most useful next question?',choices:['How many will you buy today?','Could you tell me more about your application and the specifications you need?','Our product is the best in the world.'],correct:1,why:'An open question helps you understand the customer’s needs before recommending a product.',phrase:'“Could you tell me more about your application?”'},
     {title:'Agree on a next step',scene:'You have finished a useful introductory meeting. How do you close it professionally?',choices:['OK, goodbye.','You should order quickly.','Thank you for your time. I will send the specifications tomorrow. Would a follow-up call on Thursday work for you?'],correct:2,why:'Summarize a concrete action, give a realistic timeframe, and propose a follow-up.',phrase:'“Would a follow-up call on … work for you?”'}
@@ -89,7 +89,7 @@ el('next').onclick = () => {
 };
 topics.forEach(topic => {
   const button = document.createElement('button'); button.className = 'topic'; button.dataset.topic = topic.id;
-  button.innerHTML = `<span class="topic-top"><span class="topic-icon" aria-hidden="true">${topic.icon}</span><span class="topic-time">3 situations · 5 min</span></span><h3>${topic.name}</h3><p>${topic.description}</p><span class="topic-bottom"><span>Start practicing</span><span aria-hidden="true">↗</span></span>`;
+  button.innerHTML = `<span class="topic-top"><span class="topic-icon" aria-hidden="true">${topic.icon}</span><span class="topic-time">3 situations · 5 min</span></span><h3>${topic.name}</h3><p>${topic.description}</p><span class="topic-bottom"><span>Start practicing</span><span aria-hidden="true">→</span></span>`;
   button.onclick = () => selectTopic(topic); el('topic-grid').append(button);
 });
 selectTopic(topics[0], false);
